@@ -81,6 +81,17 @@ wp-to-bear/
 └── README.md
 ```
 
+## Privacy & Data
+
+This app is **fully stateless** — no user data is ever stored on the server:
+
+- Uploaded XML files are held in memory only for the duration of the session
+- All conversion happens in-memory; nothing is written to disk
+- The ZIP download is streamed directly to your browser
+- Once the tab is closed (or the session expires), all data is released
+
+This makes it safe to host publicly without worrying about user data retention.
+
 ## License
 
 MIT
